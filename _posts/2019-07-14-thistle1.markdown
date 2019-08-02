@@ -1,0 +1,7 @@
+---
+layout: main
+title:  "Welcome to Thistle!"
+date:   2019-07-14 17:21:21 +0300
+categories: 
+---
+Thistle is the common name of a group of flowering plants characterised by leaves with sharp prickles on the margins, mostly in the family Asteraceae. Prickles can also occur all over the plant – on the stem and on the flat parts of the leaves. These prickles are an adaptation that protects the plant from being eaten by herbivores. Typically, an involucre with a clasping shape similar to a cup or urn subtends each of a thistle's flowerheads.

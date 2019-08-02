@@ -1,0 +1,5 @@
+.site-footer {
+    border-top:2px solid var(--color-boder-default, #204221);
+    margin-top: var(--spacing-layout-elemt, 2em);
+    padding-top: calc( var(--spacing-layout-elemt, 2em) / 2 );
+}
