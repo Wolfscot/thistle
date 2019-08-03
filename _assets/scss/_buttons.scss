@@ -1,0 +1,42 @@
+.button {
+    display: inline-block;
+    padding: 0.5em 1.5em;
+    background-color: var(--color-link-default);
+    color: var(--color-body-bgrd);
+    border-radius:0.3em;
+    border: 1px solid transparent;
+
+    &:hover {
+        border:1px solid var(--color-link-default);
+        background-color: var(--color-body-bgrd);
+        color: var(--color-link-default);
+    }
+    
+    &-secondary {
+        display: inline-block;
+        padding: 0.5em 1.5em;
+        background-color: var(--color-body-bgrd);
+        color: var(--color-link-default);
+        border:1px solid var(--color-link-default);
+        border-radius:0.3em;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    
+    
+    &-wrapper {
+        display:flex;
+
+        .button {
+            display:block;
+        
+            & + .button {
+            margin-left:1em;
+            }
+        }
+    }
+     
+}
+
