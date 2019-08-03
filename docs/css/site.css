@@ -257,6 +257,9 @@ body.loaded .site-title {
 .site-nav li:nth-child(4) {
   transition-delay: 1.1s; }
 
+.site-nav li:nth-child(5) {
+  transition-delay: 1.2s; }
+
 body.loaded .site-nav li {
   opacity: 1;
   transform: translateY(0); }
@@ -379,6 +382,11 @@ body.loaded .site-nav li {
 
 .page-gallery {
   background: url("../images/body_bgr.jpg"); }
+
+@media (min-width: 1024px) {
+  .page-gallery .site,
+  .page-images .site {
+    grid-template-areas: "header header" "main main" "footer footer"; } }
 
 .gallery {
   padding: 0;

@@ -1,0 +1,77 @@
+---
+layout: main
+title: Images
+order: 3
+icon: fa-address-card
+permalink: /images/
+gallery:
+  - caption: Image caption goes here
+    file: https://images.unsplash.com/photo-1564447634829-4f4d15e2f846?ixlib=rb-1.2.1&auto=format&fit=crop&q=80
+    aspectratio: portrait
+  - caption: Cat
+    file: https://images.unsplash.com/photo-1564452706399-5ad9eb828348?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&q=80
+    aspectratio:
+  - caption: The red car
+    file: https://images.unsplash.com/photo-1564435148079-9933cfd96b6a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&q=80
+    aspectratio: portrait
+  - caption: Lighthouse
+    file: https://images.unsplash.com/photo-1515726850025-724208fcd8ac?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=&q=80
+    aspectratio:
+  - caption: Image caption goes here
+    file: https://images.unsplash.com/photo-1564447634829-4f4d15e2f846?ixlib=rb-1.2.1&auto=format&fit=crop&q=80
+    aspectratio: portrait
+  - caption: Cat
+    file: https://images.unsplash.com/photo-1564452706399-5ad9eb828348?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&q=80
+    aspectratio:
+  - caption: The red car
+    file: https://images.unsplash.com/photo-1564435148079-9933cfd96b6a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&q=80
+    aspectratio: portrait
+  - caption: Lighthouse
+    file: https://images.unsplash.com/photo-1515726850025-724208fcd8ac?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=&q=80
+    aspectratio: 
+    - caption: Image caption goes here
+    file: https://images.unsplash.com/photo-1564447634829-4f4d15e2f846?ixlib=rb-1.2.1&auto=format&fit=crop&q=80
+    aspectratio: portrait
+  - caption: Cat
+    file: https://images.unsplash.com/photo-1564452706399-5ad9eb828348?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&q=80
+    aspectratio:
+  - caption: The red car
+    file: https://images.unsplash.com/photo-1564435148079-9933cfd96b6a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&q=80
+    aspectratio: portrait
+  - caption: Lighthouse
+    file: https://images.unsplash.com/photo-1515726850025-724208fcd8ac?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=&q=80
+    aspectratio:
+  - caption: Image caption goes here
+    file: https://images.unsplash.com/photo-1564447634829-4f4d15e2f846?ixlib=rb-1.2.1&auto=format&fit=crop&q=80
+    aspectratio: portrait
+  - caption: Cat
+    file: https://images.unsplash.com/photo-1564452706399-5ad9eb828348?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&q=80
+    aspectratio:
+  - caption: The red car
+    file: https://images.unsplash.com/photo-1564435148079-9933cfd96b6a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&q=80
+    aspectratio: portrait
+  - caption: Lighthouse
+    file: https://images.unsplash.com/photo-1515726850025-724208fcd8ac?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=&q=80
+    aspectratio: 
+  
+---
+<section>
+      
+    <div class="content">
+        <ul class="gallery">
+            {% for item in page.gallery %}
+            <li{% if item.aspectratio %} class="{{ item.aspectratio }}"{% endif %}>
+
+                <a href="{{ item.file }}">
+                    <span><img src="{{ item.file }}" alt=""></span>
+                        <strong>{{ item.caption }}</strong>
+                    </a>
+                    
+            </li>
+            {% endfor %}
+        </ul>
+        
+        
+    
+    </div>
+</section>

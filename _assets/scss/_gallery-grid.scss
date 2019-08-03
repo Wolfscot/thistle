@@ -2,6 +2,18 @@
     background: url('../images/body_bgr.jpg');
 }
 
+.page-gallery .site,
+.page-images .site {
+    
+    @include bp( laptop ) {
+            grid-template-areas:
+            "header header"
+            "main main"
+            "footer footer";
+    }
+}
+
+
 .gallery {
     padding: 0;
     margin: 0;

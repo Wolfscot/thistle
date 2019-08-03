@@ -73,12 +73,12 @@
 
 
 
-        @include bp( mobile) {
+        @include bp(mobile) {
             flex: 0 0 47%;
             margin-bottom: 6%;
         }
         
-        @include ( laptop) {
+        @include bp(laptop) {
             flex: 0 0 30%;
             margin-bottom: 5%;
         }
